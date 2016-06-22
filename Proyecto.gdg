@@ -1,0 +1,865 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project firstLayout="">
+    <gdVersion build="89" major="4" minor="0" revision="0" />
+    <properties folderProject="false" linuxExecutableFilename="" macExecutableFilename="" packageName="com.example.gamename" useExternalSourceFiles="false" winExecutableFilename="" winExecutableIconFile="">
+        <name>Proyecto</name>
+        <author></author>
+        <windowWidth>800</windowWidth>
+        <windowHeight>600</windowHeight>
+        <latestCompilationDirectory></latestCompilationDirectory>
+        <maxFPS>60</maxFPS>
+        <minFPS>10</minFPS>
+        <verticalSync>false</verticalSync>
+        <extensions>
+            <extension name="BuiltinObject" />
+            <extension name="BuiltinAudio" />
+            <extension name="BuiltinVariables" />
+            <extension name="BuiltinTime" />
+            <extension name="BuiltinMouse" />
+            <extension name="BuiltinKeyboard" />
+            <extension name="BuiltinJoystick" />
+            <extension name="BuiltinCamera" />
+            <extension name="BuiltinWindow" />
+            <extension name="BuiltinFile" />
+            <extension name="BuiltinNetwork" />
+            <extension name="BuiltinScene" />
+            <extension name="BuiltinAdvanced" />
+            <extension name="Sprite" />
+            <extension name="BuiltinCommonInstructions" />
+            <extension name="BuiltinCommonConversions" />
+            <extension name="BuiltinStringInstructions" />
+            <extension name="BuiltinMathematicalTools" />
+            <extension name="BuiltinExternalLayouts" />
+            <extension name="TextObject" />
+        </extensions>
+        <platforms>
+            <platform name="GDevelop JS platform" />
+        </platforms>
+        <currentPlatform>GDevelop JS platform</currentPlatform>
+    </properties>
+    <resources>
+        <resources>
+            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/TopDownSoldier.png" kind="image" name="TopDownSoldier.png" smoothed="true" userAdded="false" />
+            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/Bullet.png" kind="image" name="Bullet.png" smoothed="true" userAdded="true" />
+            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/TopDownZombie.png" kind="image" name="TopDownZombie.png" smoothed="true" userAdded="true" />
+            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/Pea-Standard.png" kind="image" name="Pea-Standard.png" smoothed="true" userAdded="true" />
+            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/Explosion.png" kind="image" name="Explosion.png" smoothed="true" userAdded="true" />
+            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/Explosion2.png" kind="image" name="Explosion2.png" smoothed="true" userAdded="true" />
+            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/Explosion3.png" kind="image" name="Explosion3.png" smoothed="true" userAdded="true" />
+            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/Explosion4.png" kind="image" name="Explosion4.png" smoothed="true" userAdded="true" />
+            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/Explosion5.png" kind="image" name="Explosion5.png" smoothed="true" userAdded="true" />
+            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/Explosion6.png" kind="image" name="Explosion6.png" smoothed="true" userAdded="true" />
+            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/Explosion7.png" kind="image" name="Explosion7.png" smoothed="true" userAdded="true" />
+            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/Explosion8.png" kind="image" name="Explosion8.png" smoothed="true" userAdded="true" />
+            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/Liquifire01.png" kind="image" name="Liquifire01.png" smoothed="true" userAdded="true" />
+            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/Liquifire02.png" kind="image" name="Liquifire02.png" smoothed="true" userAdded="true" />
+            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/Liquifire03.png" kind="image" name="Liquifire03.png" smoothed="true" userAdded="true" />
+            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/Liquifire04.png" kind="image" name="Liquifire04.png" smoothed="true" userAdded="true" />
+            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/Liquifire05.png" kind="image" name="Liquifire05.png" smoothed="true" userAdded="true" />
+            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/Liquifire06.png" kind="image" name="Liquifire06.png" smoothed="true" userAdded="true" />
+            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/Liquifire07.png" kind="image" name="Liquifire07.png" smoothed="true" userAdded="true" />
+            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/Liquifire08.png" kind="image" name="Liquifire08.png" smoothed="true" userAdded="true" />
+            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/Liquifire09.png" kind="image" name="Liquifire09.png" smoothed="true" userAdded="true" />
+        </resources>
+        <resourceFolders />
+    </resources>
+    <objects />
+    <objectsGroups />
+    <variables />
+    <layouts>
+        <layout b="209" disableInputWhenNotFocused="true" mangledName="Nueva_32Escena" name="Nueva Escena" oglFOV="90.000000" oglZFar="500.000000" oglZNear="1.000000" r="209" standardSortMethod="true" stopSoundsOnStartup="true" title="" v="209">
+            <uiSettings grid="false" gridB="255" gridG="180" gridHeight="32" gridOffsetX="0" gridOffsetY="0" gridR="158" gridWidth="32" snap="true" windowMask="false" zoomFactor="1.000000" />
+            <objectsGroups />
+            <variables />
+            <instances>
+                <instance angle="0.000000" customSize="false" height="0.000000" layer="" locked="false" name="Soldier" width="0.000000" x="350.000031" y="249.500000" zOrder="1">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="false" height="0.000000" layer="" locked="false" name="GameOver" width="0.000000" x="159.000000" y="238.500000" zOrder="2">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+            </instances>
+            <objects>
+                <object name="Soldier" type="Sprite">
+                    <variables />
+                    <behaviors />
+                    <animations>
+                        <animation useMultipleDirections="false">
+                            <directions>
+                                <direction looping="false" timeBetweenFrames="1.000000">
+                                    <sprites>
+                                        <sprite hasCustomCollisionMask="false" image="TopDownSoldier.png">
+                                            <points>
+                                                <point name="Gun" x="44.000000" y="25.000000" />
+                                            </points>
+                                            <originPoint name="origine" x="0.000000" y="0.000000" />
+                                            <centerPoint automatic="true" name="centre" x="24.000000" y="21.000000" />
+                                            <customCollisionMask>
+                                                <polygon>
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="48.000000" y="0.000000" />
+                                                    <vertice x="48.000000" y="42.000000" />
+                                                    <vertice x="0.000000" y="42.000000" />
+                                                </polygon>
+                                            </customCollisionMask>
+                                        </sprite>
+                                    </sprites>
+                                </direction>
+                            </directions>
+                        </animation>
+                    </animations>
+                </object>
+                <object name="bullet" type="Sprite">
+                    <variables />
+                    <behaviors />
+                    <animations>
+                        <animation useMultipleDirections="false">
+                            <directions>
+                                <direction looping="false" timeBetweenFrames="1.000000">
+                                    <sprites>
+                                        <sprite hasCustomCollisionMask="false" image="Bullet.png">
+                                            <points />
+                                            <originPoint name="origine" x="0.000000" y="0.000000" />
+                                            <centerPoint automatic="true" name="centre" x="5.000000" y="5.000000" />
+                                            <customCollisionMask>
+                                                <polygon>
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="10.000000" y="0.000000" />
+                                                    <vertice x="10.000000" y="10.000000" />
+                                                    <vertice x="0.000000" y="10.000000" />
+                                                </polygon>
+                                            </customCollisionMask>
+                                        </sprite>
+                                    </sprites>
+                                </direction>
+                            </directions>
+                        </animation>
+                    </animations>
+                </object>
+                <object name="Enemy" type="Sprite">
+                    <variables />
+                    <behaviors />
+                    <animations>
+                        <animation useMultipleDirections="false">
+                            <directions>
+                                <direction looping="true" timeBetweenFrames="0.050000">
+                                    <sprites>
+                                        <sprite hasCustomCollisionMask="false" image="TopDownZombie.png">
+                                            <points />
+                                            <originPoint name="origine" x="0.000000" y="0.000000" />
+                                            <centerPoint automatic="true" name="centre" x="18.500000" y="22.500000" />
+                                            <customCollisionMask>
+                                                <polygon>
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="37.000000" y="0.000000" />
+                                                    <vertice x="37.000000" y="45.000000" />
+                                                    <vertice x="0.000000" y="45.000000" />
+                                                </polygon>
+                                            </customCollisionMask>
+                                        </sprite>
+                                        <sprite hasCustomCollisionMask="false" image="Pea-Standard.png">
+                                            <points />
+                                            <originPoint name="origine" x="0.000000" y="0.000000" />
+                                            <centerPoint automatic="true" name="centre" x="18.500000" y="18.500000" />
+                                            <customCollisionMask>
+                                                <polygon>
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="37.000000" y="0.000000" />
+                                                    <vertice x="37.000000" y="37.000000" />
+                                                    <vertice x="0.000000" y="37.000000" />
+                                                </polygon>
+                                            </customCollisionMask>
+                                        </sprite>
+                                    </sprites>
+                                </direction>
+                            </directions>
+                        </animation>
+                    </animations>
+                </object>
+                <object name="Explosion" type="Sprite">
+                    <variables />
+                    <behaviors />
+                    <animations>
+                        <animation useMultipleDirections="false">
+                            <directions>
+                                <direction looping="false" timeBetweenFrames="0.010000">
+                                    <sprites>
+                                        <sprite hasCustomCollisionMask="false" image="Explosion.png">
+                                            <points />
+                                            <originPoint name="origine" x="0.000000" y="0.000000" />
+                                            <centerPoint automatic="true" name="centre" x="32.000000" y="32.000000" />
+                                            <customCollisionMask>
+                                                <polygon>
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="64.000000" y="0.000000" />
+                                                    <vertice x="64.000000" y="64.000000" />
+                                                    <vertice x="0.000000" y="64.000000" />
+                                                </polygon>
+                                            </customCollisionMask>
+                                        </sprite>
+                                        <sprite hasCustomCollisionMask="false" image="Explosion2.png">
+                                            <points />
+                                            <originPoint name="origine" x="0.000000" y="0.000000" />
+                                            <centerPoint automatic="true" name="centre" x="32.000000" y="32.000000" />
+                                            <customCollisionMask>
+                                                <polygon>
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="64.000000" y="0.000000" />
+                                                    <vertice x="64.000000" y="64.000000" />
+                                                    <vertice x="0.000000" y="64.000000" />
+                                                </polygon>
+                                            </customCollisionMask>
+                                        </sprite>
+                                        <sprite hasCustomCollisionMask="false" image="Explosion3.png">
+                                            <points />
+                                            <originPoint name="origine" x="0.000000" y="0.000000" />
+                                            <centerPoint automatic="true" name="centre" x="32.000000" y="32.000000" />
+                                            <customCollisionMask>
+                                                <polygon>
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="64.000000" y="0.000000" />
+                                                    <vertice x="64.000000" y="64.000000" />
+                                                    <vertice x="0.000000" y="64.000000" />
+                                                </polygon>
+                                            </customCollisionMask>
+                                        </sprite>
+                                        <sprite hasCustomCollisionMask="false" image="Explosion4.png">
+                                            <points />
+                                            <originPoint name="origine" x="0.000000" y="0.000000" />
+                                            <centerPoint automatic="true" name="centre" x="32.000000" y="32.000000" />
+                                            <customCollisionMask>
+                                                <polygon>
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="64.000000" y="0.000000" />
+                                                    <vertice x="64.000000" y="64.000000" />
+                                                    <vertice x="0.000000" y="64.000000" />
+                                                </polygon>
+                                            </customCollisionMask>
+                                        </sprite>
+                                        <sprite hasCustomCollisionMask="false" image="Explosion5.png">
+                                            <points />
+                                            <originPoint name="origine" x="0.000000" y="0.000000" />
+                                            <centerPoint automatic="true" name="centre" x="32.000000" y="32.000000" />
+                                            <customCollisionMask>
+                                                <polygon>
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="64.000000" y="0.000000" />
+                                                    <vertice x="64.000000" y="64.000000" />
+                                                    <vertice x="0.000000" y="64.000000" />
+                                                </polygon>
+                                            </customCollisionMask>
+                                        </sprite>
+                                        <sprite hasCustomCollisionMask="false" image="Explosion6.png">
+                                            <points />
+                                            <originPoint name="origine" x="0.000000" y="0.000000" />
+                                            <centerPoint automatic="true" name="centre" x="32.000000" y="32.000000" />
+                                            <customCollisionMask>
+                                                <polygon>
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="64.000000" y="0.000000" />
+                                                    <vertice x="64.000000" y="64.000000" />
+                                                    <vertice x="0.000000" y="64.000000" />
+                                                </polygon>
+                                            </customCollisionMask>
+                                        </sprite>
+                                        <sprite hasCustomCollisionMask="false" image="Explosion7.png">
+                                            <points />
+                                            <originPoint name="origine" x="0.000000" y="0.000000" />
+                                            <centerPoint automatic="true" name="centre" x="32.000000" y="32.000000" />
+                                            <customCollisionMask>
+                                                <polygon>
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="64.000000" y="0.000000" />
+                                                    <vertice x="64.000000" y="64.000000" />
+                                                    <vertice x="0.000000" y="64.000000" />
+                                                </polygon>
+                                            </customCollisionMask>
+                                        </sprite>
+                                        <sprite hasCustomCollisionMask="false" image="Explosion8.png">
+                                            <points />
+                                            <originPoint name="origine" x="0.000000" y="0.000000" />
+                                            <centerPoint automatic="true" name="centre" x="32.000000" y="32.000000" />
+                                            <customCollisionMask>
+                                                <polygon>
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="64.000000" y="0.000000" />
+                                                    <vertice x="64.000000" y="64.000000" />
+                                                    <vertice x="0.000000" y="64.000000" />
+                                                </polygon>
+                                            </customCollisionMask>
+                                        </sprite>
+                                    </sprites>
+                                </direction>
+                            </directions>
+                        </animation>
+                    </animations>
+                </object>
+                <object name="Dead" type="Sprite">
+                    <variables />
+                    <behaviors />
+                    <animations>
+                        <animation useMultipleDirections="false">
+                            <directions>
+                                <direction looping="false" timeBetweenFrames="0.050000">
+                                    <sprites>
+                                        <sprite hasCustomCollisionMask="false" image="Liquifire01.png">
+                                            <points />
+                                            <originPoint name="origine" x="0.000000" y="0.000000" />
+                                            <centerPoint automatic="true" name="centre" x="50.000000" y="50.000000" />
+                                            <customCollisionMask>
+                                                <polygon>
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="100.000000" y="0.000000" />
+                                                    <vertice x="100.000000" y="100.000000" />
+                                                    <vertice x="0.000000" y="100.000000" />
+                                                </polygon>
+                                            </customCollisionMask>
+                                        </sprite>
+                                        <sprite hasCustomCollisionMask="false" image="Liquifire02.png">
+                                            <points />
+                                            <originPoint name="origine" x="0.000000" y="0.000000" />
+                                            <centerPoint automatic="true" name="centre" x="50.000000" y="50.000000" />
+                                            <customCollisionMask>
+                                                <polygon>
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="100.000000" y="0.000000" />
+                                                    <vertice x="100.000000" y="100.000000" />
+                                                    <vertice x="0.000000" y="100.000000" />
+                                                </polygon>
+                                            </customCollisionMask>
+                                        </sprite>
+                                        <sprite hasCustomCollisionMask="false" image="Liquifire03.png">
+                                            <points />
+                                            <originPoint name="origine" x="0.000000" y="0.000000" />
+                                            <centerPoint automatic="true" name="centre" x="50.000000" y="50.000000" />
+                                            <customCollisionMask>
+                                                <polygon>
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="100.000000" y="0.000000" />
+                                                    <vertice x="100.000000" y="100.000000" />
+                                                    <vertice x="0.000000" y="100.000000" />
+                                                </polygon>
+                                            </customCollisionMask>
+                                        </sprite>
+                                        <sprite hasCustomCollisionMask="false" image="Liquifire04.png">
+                                            <points />
+                                            <originPoint name="origine" x="0.000000" y="0.000000" />
+                                            <centerPoint automatic="true" name="centre" x="50.000000" y="50.000000" />
+                                            <customCollisionMask>
+                                                <polygon>
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="100.000000" y="0.000000" />
+                                                    <vertice x="100.000000" y="100.000000" />
+                                                    <vertice x="0.000000" y="100.000000" />
+                                                </polygon>
+                                            </customCollisionMask>
+                                        </sprite>
+                                        <sprite hasCustomCollisionMask="false" image="Liquifire05.png">
+                                            <points />
+                                            <originPoint name="origine" x="0.000000" y="0.000000" />
+                                            <centerPoint automatic="true" name="centre" x="50.000000" y="50.000000" />
+                                            <customCollisionMask>
+                                                <polygon>
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="100.000000" y="0.000000" />
+                                                    <vertice x="100.000000" y="100.000000" />
+                                                    <vertice x="0.000000" y="100.000000" />
+                                                </polygon>
+                                            </customCollisionMask>
+                                        </sprite>
+                                        <sprite hasCustomCollisionMask="false" image="Liquifire06.png">
+                                            <points />
+                                            <originPoint name="origine" x="0.000000" y="0.000000" />
+                                            <centerPoint automatic="true" name="centre" x="50.000000" y="50.000000" />
+                                            <customCollisionMask>
+                                                <polygon>
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="100.000000" y="0.000000" />
+                                                    <vertice x="100.000000" y="100.000000" />
+                                                    <vertice x="0.000000" y="100.000000" />
+                                                </polygon>
+                                            </customCollisionMask>
+                                        </sprite>
+                                        <sprite hasCustomCollisionMask="false" image="Liquifire07.png">
+                                            <points />
+                                            <originPoint name="origine" x="0.000000" y="0.000000" />
+                                            <centerPoint automatic="true" name="centre" x="50.000000" y="50.000000" />
+                                            <customCollisionMask>
+                                                <polygon>
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="100.000000" y="0.000000" />
+                                                    <vertice x="100.000000" y="100.000000" />
+                                                    <vertice x="0.000000" y="100.000000" />
+                                                </polygon>
+                                            </customCollisionMask>
+                                        </sprite>
+                                        <sprite hasCustomCollisionMask="false" image="Liquifire08.png">
+                                            <points />
+                                            <originPoint name="origine" x="0.000000" y="0.000000" />
+                                            <centerPoint automatic="true" name="centre" x="50.000000" y="50.000000" />
+                                            <customCollisionMask>
+                                                <polygon>
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="100.000000" y="0.000000" />
+                                                    <vertice x="100.000000" y="100.000000" />
+                                                    <vertice x="0.000000" y="100.000000" />
+                                                </polygon>
+                                            </customCollisionMask>
+                                        </sprite>
+                                        <sprite hasCustomCollisionMask="false" image="Liquifire09.png">
+                                            <points />
+                                            <originPoint name="origine" x="0.000000" y="0.000000" />
+                                            <centerPoint automatic="true" name="centre" x="50.000000" y="50.000000" />
+                                            <customCollisionMask>
+                                                <polygon>
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="100.000000" y="0.000000" />
+                                                    <vertice x="100.000000" y="100.000000" />
+                                                    <vertice x="0.000000" y="100.000000" />
+                                                </polygon>
+                                            </customCollisionMask>
+                                        </sprite>
+                                    </sprites>
+                                </direction>
+                            </directions>
+                        </animation>
+                    </animations>
+                </object>
+                <object bold="true" italic="false" name="GameOver" smoothed="true" type="TextObject::Text" underlined="false">
+                    <variables />
+                    <behaviors />
+                    <string>GAME OVER</string>
+                    <font></font>
+                    <characterSize>72</characterSize>
+                    <color b="0" g="0" r="255" />
+                </object>
+            </objects>
+            <events>
+                <event disabled="false" folded="false">
+                    <type>BuiltinCommonInstructions::Standard</type>
+                    <conditions />
+                    <actions>
+                        <action>
+                            <type inverted="false" value="RotateTowardPosition" />
+                            <parameters>
+                                <parameter>Soldier</parameter>
+                                <parameter>MouseX(&quot;&quot;,0)</parameter>
+                                <parameter>MouseY(&quot;&quot;,0)</parameter>
+                                <parameter>0</parameter>
+                                <parameter></parameter>
+                            </parameters>
+                            <subActions />
+                        </action>
+                    </actions>
+                    <events />
+                </event>
+                <event disabled="false" folded="false">
+                    <type>BuiltinCommonInstructions::Standard</type>
+                    <conditions>
+                        <condition>
+                            <type inverted="false" value="KeyPressed" />
+                            <parameters>
+                                <parameter></parameter>
+                                <parameter>Left</parameter>
+                            </parameters>
+                            <subConditions />
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action>
+                            <type inverted="false" value="AddForceXY" />
+                            <parameters>
+                                <parameter>Soldier</parameter>
+                                <parameter>-100</parameter>
+                                <parameter>0</parameter>
+                                <parameter>0</parameter>
+                            </parameters>
+                            <subActions />
+                        </action>
+                    </actions>
+                    <events />
+                </event>
+                <event disabled="false" folded="false">
+                    <type>BuiltinCommonInstructions::Standard</type>
+                    <conditions>
+                        <condition>
+                            <type inverted="false" value="KeyPressed" />
+                            <parameters>
+                                <parameter></parameter>
+                                <parameter>Right</parameter>
+                            </parameters>
+                            <subConditions />
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action>
+                            <type inverted="false" value="AddForceXY" />
+                            <parameters>
+                                <parameter>Soldier</parameter>
+                                <parameter>100</parameter>
+                                <parameter>0</parameter>
+                                <parameter>0</parameter>
+                            </parameters>
+                            <subActions />
+                        </action>
+                    </actions>
+                    <events />
+                </event>
+                <event disabled="false" folded="false">
+                    <type>BuiltinCommonInstructions::Standard</type>
+                    <conditions>
+                        <condition>
+                            <type inverted="false" value="KeyPressed" />
+                            <parameters>
+                                <parameter></parameter>
+                                <parameter>Up</parameter>
+                            </parameters>
+                            <subConditions />
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action>
+                            <type inverted="false" value="AddForceXY" />
+                            <parameters>
+                                <parameter>Soldier</parameter>
+                                <parameter>0</parameter>
+                                <parameter>-100</parameter>
+                                <parameter>0</parameter>
+                            </parameters>
+                            <subActions />
+                        </action>
+                    </actions>
+                    <events />
+                </event>
+                <event disabled="false" folded="false">
+                    <type>BuiltinCommonInstructions::Standard</type>
+                    <conditions>
+                        <condition>
+                            <type inverted="false" value="KeyPressed" />
+                            <parameters>
+                                <parameter></parameter>
+                                <parameter>Down</parameter>
+                            </parameters>
+                            <subConditions />
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action>
+                            <type inverted="false" value="AddForceXY" />
+                            <parameters>
+                                <parameter>Soldier</parameter>
+                                <parameter>0</parameter>
+                                <parameter>100</parameter>
+                                <parameter>0</parameter>
+                            </parameters>
+                            <subActions />
+                        </action>
+                    </actions>
+                    <events />
+                </event>
+                <event disabled="false" folded="false">
+                    <type>BuiltinCommonInstructions::Standard</type>
+                    <conditions>
+                        <condition>
+                            <type inverted="false" value="SourisBouton" />
+                            <parameters>
+                                <parameter></parameter>
+                                <parameter>Left</parameter>
+                            </parameters>
+                            <subConditions />
+                        </condition>
+                        <condition>
+                            <type inverted="false" value="Timer" />
+                            <parameters>
+                                <parameter></parameter>
+                                <parameter>0.25</parameter>
+                                <parameter>&quot;FireRate&quot;</parameter>
+                            </parameters>
+                            <subConditions />
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action>
+                            <type inverted="false" value="Create" />
+                            <parameters>
+                                <parameter></parameter>
+                                <parameter>bullet</parameter>
+                                <parameter>Soldier.X(Gun)</parameter>
+                                <parameter>Soldier.Y(Gun)</parameter>
+                                <parameter></parameter>
+                            </parameters>
+                            <subActions />
+                        </action>
+                        <action>
+                            <type inverted="false" value="AddForceAL" />
+                            <parameters>
+                                <parameter>bullet</parameter>
+                                <parameter>Soldier.Direction()</parameter>
+                                <parameter>400</parameter>
+                                <parameter>1</parameter>
+                            </parameters>
+                            <subActions />
+                        </action>
+                        <action>
+                            <type inverted="false" value="ResetTimer" />
+                            <parameters>
+                                <parameter></parameter>
+                                <parameter>&quot;FireRate&quot;</parameter>
+                            </parameters>
+                            <subActions />
+                        </action>
+                    </actions>
+                    <events />
+                </event>
+                <event disabled="false" folded="false">
+                    <type>BuiltinCommonInstructions::Standard</type>
+                    <conditions>
+                        <condition>
+                            <type inverted="false" value="Timer" />
+                            <parameters>
+                                <parameter></parameter>
+                                <parameter>1</parameter>
+                                <parameter>&quot;EnemyCreation&quot;</parameter>
+                            </parameters>
+                            <subConditions />
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action>
+                            <type inverted="false" value="ResetTimer" />
+                            <parameters>
+                                <parameter></parameter>
+                                <parameter>&quot;EnemyCreation&quot;</parameter>
+                            </parameters>
+                            <subActions />
+                        </action>
+                        <action>
+                            <type inverted="false" value="Create" />
+                            <parameters>
+                                <parameter></parameter>
+                                <parameter>Enemy</parameter>
+                                <parameter>Random(800)</parameter>
+                                <parameter>-50</parameter>
+                                <parameter></parameter>
+                            </parameters>
+                            <subActions />
+                        </action>
+                    </actions>
+                    <events />
+                </event>
+                <event disabled="false" folded="false">
+                    <type>BuiltinCommonInstructions::Standard</type>
+                    <conditions />
+                    <actions>
+                        <action>
+                            <type inverted="false" value="AddForceVers" />
+                            <parameters>
+                                <parameter>Enemy</parameter>
+                                <parameter>Soldier</parameter>
+                                <parameter>150</parameter>
+                                <parameter>0</parameter>
+                            </parameters>
+                            <subActions />
+                        </action>
+                        <action>
+                            <type inverted="false" value="RotateTowardPosition" />
+                            <parameters>
+                                <parameter>Enemy</parameter>
+                                <parameter>Soldier.X(Center)</parameter>
+                                <parameter>Soldier.Y(Center)</parameter>
+                                <parameter>0</parameter>
+                                <parameter></parameter>
+                            </parameters>
+                            <subActions />
+                        </action>
+                    </actions>
+                    <events />
+                </event>
+                <event disabled="false" folded="false">
+                    <type>BuiltinCommonInstructions::Standard</type>
+                    <conditions>
+                        <condition>
+                            <type inverted="false" value="CollisionNP" />
+                            <parameters>
+                                <parameter>bullet</parameter>
+                                <parameter>Enemy</parameter>
+                                <parameter></parameter>
+                                <parameter></parameter>
+                            </parameters>
+                            <subConditions />
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action>
+                            <type inverted="false" value="Create" />
+                            <parameters>
+                                <parameter></parameter>
+                                <parameter>Explosion</parameter>
+                                <parameter>Enemy.X()</parameter>
+                                <parameter>Enemy.Y()</parameter>
+                                <parameter></parameter>
+                            </parameters>
+                            <subActions />
+                        </action>
+                        <action>
+                            <type inverted="false" value="Delete" />
+                            <parameters>
+                                <parameter>Enemy</parameter>
+                                <parameter></parameter>
+                            </parameters>
+                            <subActions />
+                        </action>
+                    </actions>
+                    <events />
+                </event>
+                <event disabled="false" folded="false">
+                    <type>BuiltinCommonInstructions::Standard</type>
+                    <conditions>
+                        <condition>
+                            <type inverted="false" value="AnimationEnded" />
+                            <parameters>
+                                <parameter>Explosion</parameter>
+                            </parameters>
+                            <subConditions />
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action>
+                            <type inverted="false" value="Delete" />
+                            <parameters>
+                                <parameter>Explosion</parameter>
+                                <parameter></parameter>
+                            </parameters>
+                            <subActions />
+                        </action>
+                    </actions>
+                    <events />
+                </event>
+                <event disabled="false" folded="false">
+                    <type>BuiltinCommonInstructions::Standard</type>
+                    <conditions>
+                        <condition>
+                            <type inverted="false" value="CollisionNP" />
+                            <parameters>
+                                <parameter>Enemy</parameter>
+                                <parameter>Soldier</parameter>
+                                <parameter></parameter>
+                                <parameter></parameter>
+                            </parameters>
+                            <subConditions />
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action>
+                            <type inverted="false" value="Create" />
+                            <parameters>
+                                <parameter></parameter>
+                                <parameter>Dead</parameter>
+                                <parameter>Soldier.X()</parameter>
+                                <parameter>Soldier.Y()</parameter>
+                                <parameter></parameter>
+                            </parameters>
+                            <subActions />
+                        </action>
+                        <action>
+                            <type inverted="false" value="Delete" />
+                            <parameters>
+                                <parameter>Soldier</parameter>
+                                <parameter></parameter>
+                            </parameters>
+                            <subActions />
+                        </action>
+                        <action>
+                            <type inverted="false" value="ResetTimer" />
+                            <parameters>
+                                <parameter></parameter>
+                                <parameter>&quot;GameOver&quot;</parameter>
+                            </parameters>
+                            <subActions />
+                        </action>
+                    </actions>
+                    <events />
+                </event>
+                <event disabled="false" folded="false">
+                    <type>BuiltinCommonInstructions::Standard</type>
+                    <conditions>
+                        <condition>
+                            <type inverted="false" value="DepartScene" />
+                            <parameters>
+                                <parameter></parameter>
+                            </parameters>
+                            <subConditions />
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action>
+                            <type inverted="false" value="Cache" />
+                            <parameters>
+                                <parameter>GameOver</parameter>
+                            </parameters>
+                            <subActions />
+                        </action>
+                    </actions>
+                    <events />
+                </event>
+                <event disabled="false" folded="false">
+                    <type>BuiltinCommonInstructions::Standard</type>
+                    <conditions>
+                        <condition>
+                            <type inverted="false" value="NbObjet" />
+                            <parameters>
+                                <parameter>Soldier</parameter>
+                                <parameter>=</parameter>
+                                <parameter>0</parameter>
+                            </parameters>
+                            <subConditions />
+                        </condition>
+                        <condition>
+                            <type inverted="false" value="TimeScale" />
+                            <parameters>
+                                <parameter></parameter>
+                                <parameter>&gt;</parameter>
+                                <parameter>0.5</parameter>
+                            </parameters>
+                            <subConditions />
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action>
+                            <type inverted="false" value="Montre" />
+                            <parameters>
+                                <parameter>GameOver</parameter>
+                                <parameter></parameter>
+                            </parameters>
+                            <subActions />
+                        </action>
+                        <action>
+                            <type inverted="false" value="ChangeTimeScale" />
+                            <parameters>
+                                <parameter></parameter>
+                                <parameter>0</parameter>
+                            </parameters>
+                            <subActions />
+                        </action>
+                    </actions>
+                    <events />
+                </event>
+            </events>
+            <layers>
+                <layer name="" visibility="true">
+                    <cameras>
+                        <camera defaultSize="true" defaultViewport="true" height="0.000000" viewportBottom="1.000000" viewportLeft="0.000000" viewportRight="1.000000" viewportTop="0.000000" width="0.000000" />
+                    </cameras>
+                </layer>
+            </layers>
+            <behaviorsSharedData />
+        </layout>
+    </layouts>
+    <externalEvents />
+    <externalLayouts />
+    <externalSourceFiles />
+</project>
