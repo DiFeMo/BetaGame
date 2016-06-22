@@ -31,6 +31,7 @@
             <extension name="BuiltinMathematicalTools" />
             <extension name="BuiltinExternalLayouts" />
             <extension name="TextObject" />
+            <extension name="DestroyOutsideBehavior" />
         </extensions>
         <platforms>
             <platform name="GDevelop JS platform" />
@@ -60,6 +61,7 @@
             <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/Liquifire07.png" kind="image" name="Liquifire07.png" smoothed="true" userAdded="true" />
             <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/Liquifire08.png" kind="image" name="Liquifire08.png" smoothed="true" userAdded="true" />
             <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Examples/Liquifire09.png" kind="image" name="Liquifire09.png" smoothed="true" userAdded="true" />
+            <resource alwaysLoaded="false" file="../../../../Program Files (x86)/GDevelop/Free resources/Backgrounds/0058.jpg" kind="image" name="0058.jpg" smoothed="true" userAdded="true" />
         </resources>
         <resourceFolders />
     </resources>
@@ -78,6 +80,11 @@
                     <initialVariables />
                 </instance>
                 <instance angle="0.000000" customSize="false" height="0.000000" layer="" locked="false" name="GameOver" width="0.000000" x="159.000000" y="238.500000" zOrder="2">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="false" height="0.000000" layer="" locked="false" name="Background" width="0.000000" x="0.000000" y="0.000000" zOrder="-10">
                     <numberProperties />
                     <stringProperties />
                     <initialVariables />
@@ -115,7 +122,9 @@
                 </object>
                 <object name="bullet" type="Sprite">
                     <variables />
-                    <behaviors />
+                    <behaviors>
+                        <behavior extraBorder="0.000000" name="Destruir Fuera" type="DestroyOutsideBehavior::DestroyOutside" />
+                    </behaviors>
                     <animations>
                         <animation useMultipleDirections="false">
                             <directions>
@@ -436,6 +445,33 @@
                     <font></font>
                     <characterSize>72</characterSize>
                     <color b="0" g="0" r="255" />
+                </object>
+                <object name="Background" type="Sprite">
+                    <variables />
+                    <behaviors />
+                    <animations>
+                        <animation useMultipleDirections="false">
+                            <directions>
+                                <direction looping="false" timeBetweenFrames="1.000000">
+                                    <sprites>
+                                        <sprite hasCustomCollisionMask="false" image="0058.jpg">
+                                            <points />
+                                            <originPoint name="origine" x="0.000000" y="0.000000" />
+                                            <centerPoint automatic="true" name="centre" x="400.000000" y="300.000000" />
+                                            <customCollisionMask>
+                                                <polygon>
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="800.000000" y="0.000000" />
+                                                    <vertice x="800.000000" y="600.000000" />
+                                                    <vertice x="0.000000" y="600.000000" />
+                                                </polygon>
+                                            </customCollisionMask>
+                                        </sprite>
+                                    </sprites>
+                                </direction>
+                            </directions>
+                        </animation>
+                    </animations>
                 </object>
             </objects>
             <events>
